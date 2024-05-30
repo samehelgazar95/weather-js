@@ -1,7 +1,5 @@
 # **Weather-js:**
 
-A simple yet powerful web application that displays real-time weather information for any location worldwide. Utilizing OpenWeatherMap API for weather data and TimeZonedB API for timezone information, this app offers a comprehensive view of the current weather conditions along with forecasts for the next five days.
-
 Demo: https://samehelgazar95.github.io/weather-js/ <br>
 ![Screenshot from 2024-05-30 03-53-56](/assets/Screenshot%20from%202024-05-30%2003-53-56.png)
 
