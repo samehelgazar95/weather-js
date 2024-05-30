@@ -1,0 +1,160 @@
+:root {
+  --main-color: #d0cd8f;
+  --second-color: #d6cbc0;
+  --font-color: #444e54;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'monospace';
+  color: var(--font-color);
+}
+
+body {
+  background-color: var(--second-color);
+  display: none;
+}
+
+main {
+  padding: 10px;
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  width: 90%;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ----------------- Section 1111111111 ----------------- */
+.section1 form {
+  flex: 1;
+  text-align: center;
+}
+
+.section1 form input {
+  width: 70%;
+  height: 35px;
+  margin-right: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+.section1 form input:focus {
+  outline: none;
+  outline: 3px solid var(--main-color);
+}
+
+.section1 form button {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+}
+
+.section1 form button:hover {
+  cursor: pointer;
+}
+
+.section1 > div {
+  flex: 1;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section1 .main-icon {
+  width: 150px;
+}
+/* ----------------- Section 22222222 ---------------- */
+.section2 {
+  align-items: flex-start;
+}
+
+.section2 .degrees {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.section2 .degrees .c-div,
+.section2 .degrees .f-div {
+  display: flex;
+  justify-content: center;
+}
+
+.section2 .degrees .curr-degs {
+  max-width: 27%;
+  min-width: 22%;
+}
+
+.section2 .day-time {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.section2 .day-time .day {
+  font-size: 35px;
+}
+
+.section2 .humidity-wind {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* ----------------- Section 333333333 ---------------- */
+.section3 {
+  position: relative;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.section3 .predict {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.section3 .predict .degrees {
+  display: flex;
+  gap: 15px;
+}
+
+.section3::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--font-color);
+  top: -45px;
+  left: 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="section section1">
+        <form>
+          <input type="text" placeholder="Search By City..." />
+          <button type="submit">Search</button>
+        </form>
+        <div>
+          <h2 class="city-name">Cairo, EG</h2>
+          <img
+            src="https://openweathermap.org/img/wn/02n@2x.png"
+            class="main-icon"
+            alt="main-icon"
+          />
+        </div>
+      </section>
+
+      <section class="section section2">
+        <div class="degrees">
+          <div class="c-div">
+            <span class="curr-degs">4</span>
+            <span>°C</span>
+          </div>
+          <div class="f-div">
+            <span class="curr-degs">90</span>
+            <span>°F</span>
+          </div>
+        </div>
+        <div class="day-time">
+          <p class="time">20:04</p>
+          <p class="day">Thursday</p>
+          <p class="weather-desc">Cloudy</p>
+        </div>
+        <div class="humidity-wind">
+          <p class="humidity">
+            Humidity: <span class="humiditywind">60%</span>
+          </p>
+          <p class="wind">Wind: <span class="humiditywind">3 m/s</span></p>
+        </div>
+      </section>
+
+      <section class="section section3"></section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.3.0/luxon.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
